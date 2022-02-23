@@ -24,7 +24,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+    return fs.writeFileSync(path.join(process.cwd(), fileName), generateMarkdown(data));
 }
 
 // TODO: Create a function to initialize app
@@ -103,7 +103,7 @@ function init() {
             },
         ])
         .then((response) => {
-            
+            writeToFile("README.md", response);
         });
 }
 
