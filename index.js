@@ -1,9 +1,9 @@
 // TODO: Include packages needed for this application
+
 const fs = require('fs');
 const inquirer = require('inquirer');
 const path = require('path');
-var generateMarkdown = require('./utils/generateMarkdown');
-
+const generate =  require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
     "Please enter a title for your project",
@@ -13,7 +13,6 @@ const questions = [
     "Project description: What did you learn?",
     "Please enter steps to install your application",
     "Please provide instructions and examples for use",
-    "Please enter the path to screenshot(s) [You may enter multiple paths seperated by commas]",
     "Please enter Credits for your project",
     "What License did you use for this project?",
     "How can someone contribute to your project?",
@@ -24,7 +23,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), generateMarkdown(data));
+    return fs.writeFileSync(path.join (process.env.PWD,'/Develop/output/', fileName), generate(data));
 }
 
 // TODO: Create a function to initialize app
@@ -38,22 +37,22 @@ function init() {
             {
                 type: "input",
                 message: questions[1],
-                name: "description-motivation",
+                name: "descriptionMotivation",
             },
             {
                 type: "input",
                 message: questions[2],
-                name: "description-reason",
+                name: "descriptionReason",
             },
             {
                 type: "input",
                 message: questions[3],
-                name: "description-solution",
+                name: "descriptionSolution",
             },
             {
                 type: "input",
                 message: questions[4],
-                name: "description-learning",
+                name: "descriptionLearning",
             },
             {
                 type: "input",
@@ -68,37 +67,32 @@ function init() {
             {
                 type: "input",
                 message: questions[7],
-                name: "screenshots",
-            },
-            {
-                type: "input",
-                message: questions[8],
                 name: "credits",
             },
             {
                 type: "checkbox",
-                message: questions[9],
-                choices: ["MIT", "GNU General Public License 2.0", "Apache License 2.0", "GNU General Public License 3.0"],
+                message: questions[8],
+                choices: ["MIT", "GNU General Public License 2.0", "Apache License 2.0", "GNU General Public License 3.0", "none"],
                 name: "license",
             },
             {
                 type: "input",
-                message: questions[10],
+                message: questions[9],
                 name: "contribution",
             },
             {
                 type: "input",
+                message: questions[10],
+                name: "testingInstructions"
+            },
+            {
+                type: "input",
                 message: questions[11],
-                name: "testing-instructions"
+                name: "githubUname"
             },
             {
                 type: "input",
                 message: questions[12],
-                name: "github-uname"
-            },
-            {
-                type: "input",
-                message: questions[13],
                 name: "email"
             },
         ])

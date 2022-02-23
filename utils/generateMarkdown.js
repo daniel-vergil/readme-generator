@@ -4,8 +4,10 @@ function renderLicenseBadge(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
-return "License";
+function renderLicenseLink(license) {
+  return license;
+}
+
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
@@ -14,39 +16,49 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `
   # ${data.title}
+
   ## Table of Contents:
-  1. [Description](#description) 
-  2. [Installation](#Installation)
-  3. [Usage](#Usage)  
-  4. [Credits](#Credits)
-  5. [License](#License)
-  6. [How to Contribute](#How to Contribute)
-  7. [Tests](#Tests)
-  8. [GitHub](#GitHub)
-  9. [Questions](#Questions)
+  - [Description](#description) 
+  - [Installation](#installation)
+  - [Usage](#usage)  
+  - [Credits](#credits)
+  - [License](#license)
+  - [How to Contribute](#how-to-contribute)
+  - [Tests](#tests)
+  - [GitHub](#github)
+  - [Questions](#questions)
+
 ## Description
-- ${data.description-motivation} 
-- ${description-reason} 
-- ${data.description-solution} 
-- ${data.description-learning} 
+- ${data.descriptionMotivation} 
+- ${data.descriptionReason} 
+- ${data.descriptionSolution} 
+- ${data.descriptionLearning} 
+
 ## Installation
-${data.installation}
+ ${data.installation}
+
 ## Usage
-${data.usage}
-md ![alt text](${data.screenshots})
+ ${data.usage}
+
 ## Credits
-${data.credits}
+ ${data.credits}
+
 ## License
-${renderLicenseLink(data.license)}
+ ${renderLicenseSection(data.license)}
+
 ## How to Contribute
-${data.contribution}
+ ${data.contribution}
+
 ## Tests
-${data.testing-instructions}
+ ${data.testingInstructions}
+
 ## GitHub
-${data.github-uname}
+ ${data.githubUname}
+
 ## Questions
 Please email me at ${data.email} for any questions.
 `
 }
+
 
 module.exports = generateMarkdown;
