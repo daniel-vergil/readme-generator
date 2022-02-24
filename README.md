@@ -25,6 +25,7 @@
 
 ## Usage
 <p>1. Answer the prompts to generate a high quality README file<br>2. Readme file will be auto-generated in the output folder<br>3. If you want to enter multi-line answers, include ‘br’ tag at the end of each line</p>
+![image](https://user-images.githubusercontent.com/55717787/155456037-efbc096e-7a86-4fe7-a4a5-b36edcc21952.png)
 
 ## Credits
 <p>https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide<br>https://www.npmjs.com/package/inquirer</p>
