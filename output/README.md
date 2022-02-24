@@ -1,46 +1,47 @@
 
-  # dfdfdsf
+  <h1 align="center">fsdfs</h1>
 
-  ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+  ![License: AL v2](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
   ## Table of Contents:
   - [Description](#description) 
   - [Installation](#installation)
   - [Usage](#usage)  
-  - [Credits](#credits)
-  - [License](#license)
+  - [Credits](#credits)  
+ - [License](#license)
   - [How to Contribute](#how-to-contribute)
   - [Tests](#tests)
   - [GitHub](#github)
   - [Questions](#questions)
 
 ## Description
-- fdfdsf 
-- dsfdsfds 
+- fdsfsdf 
+- fsdfdsf 
 - fdsfdsf 
-- fdfs 
+- fdsfdsfs 
 
 ## Installation
- fdfdsf
+- ffsdfsdf
 
 ## Usage
- fdfsfs
+- fdsfsdfsd
 
 ## Credits
- sdfdsfds
+- sdfdsfds
 
-## License
- ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
- - This application is covered by [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
+## License  
+![License: AL v2](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+ - This application is covered by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
 
 ## How to Contribute
- fdsfs
+- fdsf
 
 ## Tests
- fdsfsdf
+- fdsfs
 
 ## GitHub
- Find me on GitHub dfdsf
+
+:octocat: Find me on GitHub: [daniel-vergil](https://github.com/daniel-vergil)
 
 ## Questions
-Please email me at dsfdsf for any questions.
+- Email me at [daniel.vergil2711@gmail.com](mailto:daniel.vergil2711@gmail.com) for any questions.
