@@ -23,7 +23,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join (process.env.PWD,'/Develop/output/', fileName), generate(data));
+    return fs.writeFileSync(path.join (process.env.PWD,'/output/', fileName), generate(data));
 }
 
 // TODO: Create a function to initialize app
