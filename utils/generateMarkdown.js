@@ -76,21 +76,21 @@ function generateMarkdown(data) {
 - ${data.descriptionLearning} 
 
 ## Installation
-${data.installation}
+<p>${data.installation}</p>
 
 ## Usage
-${data.usage}
+<p>${data.usage}</p>
 
 ## Credits
-${data.credits}
+<p>${data.credits}</p>
 
 ${renderLicenseSection(data.license[0])}
 
 ## How to Contribute
-${data.contribution}
+<p>${data.contribution}</p>
 
 ## Tests
-${data.testingInstructions}
+<p>${data.testingInstructions}</p>
 
 ## GitHub
 :octocat: Find me on GitHub: [${data.githubUname}](https://github.com/${data.githubUname})
