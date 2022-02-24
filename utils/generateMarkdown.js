@@ -76,27 +76,27 @@ function generateMarkdown(data) {
 - ${data.descriptionLearning} 
 
 ## Installation
-- ${data.installation}
+${data.installation}
 
 ## Usage
-- ${data.usage}
+${data.usage}
 
 ## Credits
-- ${data.credits}
+${data.credits}
 
 ${renderLicenseSection(data.license[0])}
 
 ## How to Contribute
-- ${data.contribution}
+${data.contribution}
 
 ## Tests
-- ${data.testingInstructions}
+${data.testingInstructions}
 
 ## GitHub
-- Find me on GitHub: [${data.githubUname}](https://github.com/${data.githubUname})
+:octocat: Find me on GitHub: [${data.githubUname}](https://github.com/${data.githubUname})
 
 ## Questions
-- Email me at [${data.email}](mailto:${data.email}) for any questions.
+:email: Email me at [${data.email}](mailto:${data.email}) for any questions.
 `
 }
 

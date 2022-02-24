@@ -6,7 +6,7 @@ const generate = require('./utils/generateMarkdown');
 
 // Create an array of questions for user input
 const questions = [
-    "Please enter a title for your project",
+    "Please enter a title for your project",    
     "Project description: What was your motivation?",
     "Project description: Why did you build this project?",
     "Project description: What problem does it solve?",
@@ -17,14 +17,21 @@ const questions = [
     "What License did you use for this project?",
     "How can someone contribute to your project?",
     "Please enter test instructions",
-    "Please enter your github username",
+    "Please enter your GitHub username",
     "Please enter a good email to contact you"
 ];
 
 // Create a function to write README file
 function writeToFile(fileName, data) {
+    try {
     return fs.writeFileSync(path.join(process.env.PWD, '/output/', fileName), generate(data));
+    } finally {
+        console.log("ReadMe file is generated. Please check the output folder. Thank you!");
+    }
 }
+
+// Display instructions to the users
+console.log("INSTRUCTIONS: Please answer the below prompts to generate a high quality README file. Readme file will be auto-generated in the output folder. If you want to enter multi-line answers, please include <br> tag at the end of each line. Thank you!");
 
 // Create a function to initialize app
 function init() {
