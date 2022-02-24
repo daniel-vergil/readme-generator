@@ -44,4 +44,4 @@
 :octocat: Find me on GitHub: [daniel-vergil](https://github.com/daniel-vergil)
 
 ## Questions
-- Email me at [daniel.vergil2711@gmail.com](mailto:daniel.vergil2711@gmail.com) for any questions.
+:email: Email me at [daniel.vergil2711@gmail.com](mailto:daniel.vergil2711@gmail.com) for any questions.
